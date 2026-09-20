@@ -14,9 +14,6 @@
 ..
 .SIZE 12
 .
-.de EXEC
-\\$^
-..
 .de LEFT_RULE
 .   br
 .   nr RULE_TOP \\n[VERT_POS]
@@ -26,7 +23,7 @@
 .   in -1n
 .   nr RULE_HEIGHT (\\n[VERT_POS] - \\n[RULE_TOP])
 .   sp -1
-.   EXEC \L'-\\n[RULE_HEIGHT]u'
+.   nop \L'-\\n[RULE_HEIGHT]u'
 .   br
 ..
 .de HEADER
@@ -35,10 +32,10 @@
 .   device pdf: pdfpic \\*[PIC_NAME] -L \\n[PIC_WIDTH]i
 .   in +(\\n[PIC_WIDTH]i + \\n[FIG_PAD]u)
 .   sp
-.   EXEC \s[36]\\$^\s[0]
+.   nop \s[36]\\$^\s[0]
 .   br
 .   SIZE +3
-.   EXEC \fICurriculum Vitae\fP
+.   nop \fICurriculum Vitae\fP
 .   sp 0.5
 .   LEFT_RULE
 ..
@@ -52,7 +49,7 @@
 .   ds LABEL \\$1
 .   shift
 .   ta T 0.7i
-.   EXEC \fB\\*[LABEL]:\fP\t\\$*
+.   nop \fB\\*[LABEL]:\fP\t\\$*
 .   br
 .   ta T 0.5
 ..
@@ -70,7 +67,7 @@
 .   nr ITEM_NUM (\\n[ITEM_NUM] + 1)
 .   nr INDENT   (\\n[COL_NUM] * \\n[COL_WIDTH])
 .   ti +(\\n[INDENT] + \\n[FIG_PAD]u)
-.   EXEC \(bu \\$^
+.   nop \(bu \\$^
 .   if ( (\\n[ITEM_NUM] % \\n[MAX_ROWS]) = 0 ) \
 .       sp (\\n[LIST_TOP]u - \\n[VERT_POS]u)
 ..
@@ -80,20 +77,20 @@
 ..
 .de SECTION
 .   sp
-.   EXEC \d\l'\\n[.l]u'\h'-\\n[.l]u'\u\c
-.   EXEC \s[20]\\$^\s[0]
+.   nop \d\l'\\n[.l]u'\h'-\\n[.l]u'\u\c
+.   nop \s[20]\\$^\s[0]
 .   sp .5
 ..
 .de TIMELINE_DATE
 .   sp .5
 .   in +\\n[FIG_PAD]u
 .   ll -\\n[FIG_PAD]u
-.   EXEC \fI\\$1 \- \\$2\fP
+.   nop \fI\\$1 \- \\$2\fP
 .   in +1i
 .   sp -1
 .   LEFT_RULE
 .   shift 2
-.   EXEC \fB\\$^\fP
+.   nop \fB\\$^\fP
 .   br
 ..
 .de TIMELINE_DATE_END
