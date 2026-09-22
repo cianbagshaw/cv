@@ -1,0 +1,61 @@
+\# vim: ft=groff
+.HEADER Cian Bagshaw
+.INFO web   cianb.xyz
+.INFO email \*[EMAIL] 
+.INFO phone \*[TELEPHONE_NUM]
+.INFO home  \s[-4]\*[HOME_ADDRESS]\s[+4]
+.HEADER_END
+.
+.SECTION Summary 
+A competent, driven computer enthusiast, with a wide range of skills and
+experience from years of experimentation, with a particular interest in
+\fIUnix\fP-based systems, minimal, and \fIFOSS\fP software.
+.
+.SECTION Competencies
+.LIST 4 8 
+.LI Quick Learner
+.LI Flexible
+.LI Fast Typist
+.LI Multimedia
+.LI Hardware 
+.LI Repair
+.LI Networking
+.LI Windows
+.LI Linux
+.LI Unix Shell
+.LI C/C++
+.LI Python
+.LI NodeJS
+.LI HTML/CSS/JS 
+.LI Groff/Troff
+.LI VI(M)
+.LIST_END
+.
+.SECTION Educational Institutions 
+.TIMELINE_DATE 2021 2022 Dunboyne College of Further Education
+Completed modules in programming, networking, web, mobile, hardware, security,
+OSs, and maths.  Was involved in college events and student union.
+.TIMELINE_DATE_END
+.TIMELINE_DATE 2016 2020 Dunshaughlin Community College
+Completed the \fIJunior Cycle\fP and fifth year. Founded a school computer
+club, was a member of the chess club, and received multiple attendance awards.
+.TIMELINE_DATE_END
+.
+.SECTION Work Experience
+.TIMELINE_DATE 2022 2022 Navan PC
+Part time work repairing/refurbishing devices, web development, server and
+network management.
+.TIMELINE_DATE_END
+.TIMELINE_DATE 2021 2022 Navan PC
+Completed work experience for \fIDCFE\fP.
+.TIMELINE_DATE_END
+.
+.SECTION External Activities
+I maintain a custom-built PC, running a minimal \fIArch Linux i3wm\fP system,
+as well as a \fIDebain Linux\fP VPS running web, email, \fIMatrix\fP, and
+\fIGit\fP servers. I often read technical computer books. Outside of computers,
+I do cooking, walking, weight lifting, and other reading.
+.
+.SECTION References
+.INFO \*[REFEREE1]
+.INFO \*[REFEREE2]

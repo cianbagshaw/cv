@@ -1,0 +1,3 @@
+# Ignore output and sensitive info file
+info.groff
+cv.pdf
