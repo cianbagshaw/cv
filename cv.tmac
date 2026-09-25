@@ -1,8 +1,4 @@
 .\" vim: ft=groff
-.nr PIC_WIDTH  2 \" inches
-.nr PIC_HEIGHT 2
-.ds PIC_NAME   profile.pdf
-.
 .nr FIG_PAD 1.2m \" figure padding
 .nr VSPC    120  \" vertical space as % of text size
 .
@@ -27,23 +23,15 @@
 .   br
 ..
 .de HEADER
-.   br 
-.   nr HEADER_TOP \\n[VERT_POS]
-.   device pdf: pdfpic \\*[PIC_NAME] -L \\n[PIC_WIDTH]i
-.   in +(\\n[PIC_WIDTH]i + \\n[FIG_PAD]u)
 .   sp
 .   nop \s[36]\\$^\s[0]
-.   br
-.   SIZE +3
-.   nop \fICurriculum Vitae\fP
 .   sp 0.5
+.   SIZE +3
 .   LEFT_RULE
 ..
 .de HEADER_END
 .   SIZE -3
 .   LEFT_RULE_END
-.   in -(\\n[PIC_WIDTH]i + \\n[FIG_PAD]u)
-.   sp (\\n[HEADER_TOP]u + \\n[PIC_HEIGHT]i + 1v - \\n[VERT_POS]u)
 ..
 .de INFO
 .   ds LABEL \\$1
