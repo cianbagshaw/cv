@@ -4,6 +4,9 @@
 .
 .aln VERT_POS nl
 .
+.pl 11.7i \" page length (A4)
+.ll 6.3i  \" line length (A4 minus margins)
+.
 .de SIZE
 .   ps \\$1
 .   vs ((\\n[.s] * \\n[VSPC]) / 100)
@@ -23,7 +26,6 @@
 .   br
 ..
 .de HEADER
-.   sp
 .   nop \s[36]\\$^\s[0]
 .   sp 0.5
 .   SIZE +3
@@ -86,9 +88,20 @@
 .   in -(1i + \\n[FIG_PAD]u)
 .   ll +\\n[FIG_PAD]u
 ..
-.de FOOTER
-'   sp
-.   tl ''\s-2\\*[FOOTER_STRING]\s+2''
-'   sp 2
+.de HREF
+.    pdfhref W -D \\$^ -- \\$^
 ..
-.wh -2m FOOTER
+.de HEAD
+'   sp 0.75i
+..
+.de FOOT
+'   sp (0.5i - 1v)
+.   ev foot
+.       ce 1
+.       nop The source code for this document is available at: \c
+.       HREF https://github.com/cianbagshaw/cv
+.   ev
+'   bp
+..
+.wh 0   HEAD
+.wh -1i FOOT
