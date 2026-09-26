@@ -37,7 +37,10 @@
 ..
 .de HEAD_END
 .   br
+.   ce 1
+.   nop \l'3i'
 .   ad n
+.   sp
 ..
 .de LIST
 .   br
@@ -64,7 +67,7 @@
 .de SECTION
 .   sp
 .   nop \d\l'\\n[.l]u'\h'-\\n[.l]u'\u\c
-.   nop \s[20]\\$^\s[0]
+.   nop \fB\\$^\fP
 .   sp .5
 ..
 .de TIMELINE_DATE
