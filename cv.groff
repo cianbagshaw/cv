@@ -1,10 +1,13 @@
 \# vim: ft=groff
-.HEADER Cian Bagshaw
-.INFO web   cianb.xyz
-.INFO email \*[EMAIL] 
-.INFO phone \*[TELEPHONE_NUM]
-.INFO home  \s[-4]\*[HOME_ADDRESS]\s[+4]
-.HEADER_END
+.HEAD
+.NAME Cian Bagshaw
+.SUBHEAD \*[HOME_ADDRESS]
+.SUBHEAD \*[TELEPHONE_NUM] | \*[EMAIL]
+.SUBHEAD
+.HREF github.com/cianbagshaw
+|
+.HREF linkedin.com/in/cian-bagshaw/
+.HEAD_END
 .
 .SECTION Summary 
 A competent, driven computer enthusiast, with a wide range of skills and
@@ -55,7 +58,3 @@ I maintain a custom-built PC, running a minimal \fIArch Linux i3wm\fP system,
 as well as a \fIDebain Linux\fP VPS running web, email, \fIMatrix\fP, and
 \fIGit\fP servers. I often read technical computer books. Outside of computers,
 I do cooking, walking, weight lifting, and other reading.
-.
-.SECTION References
-.INFO \*[REFEREE1]
-.INFO \*[REFEREE2]

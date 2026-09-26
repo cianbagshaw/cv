@@ -25,23 +25,19 @@
 .   nop \L'-\\n[RULE_HEIGHT]u'
 .   br
 ..
-.de HEADER
+.de HEAD
+.   ad c
+..
+.de NAME
 .   nop \s[36]\\$^\s[0]
+..
+.de SUBHEAD
 .   sp 0.5
-.   SIZE +3
-.   LEFT_RULE
+.   if (\\n[.$] > 0) .nop \\$^
 ..
-.de HEADER_END
-.   SIZE -3
-.   LEFT_RULE_END
-..
-.de INFO
-.   ds LABEL \\$1
-.   shift
-.   ta T 0.7i
-.   nop \fB\\*[LABEL]:\fP\t\\$*
+.de HEAD_END
 .   br
-.   ta T 0.5
+.   ad n
 ..
 .de LIST
 .   br
@@ -89,19 +85,19 @@
 .   ll +\\n[FIG_PAD]u
 ..
 .de HREF
-.    pdfhref W -D \\$^ -- \\$^
+.    pdfhref W -D https://\\$^ -- \\$^
 ..
-.de HEAD
+.de HEADER
 '   sp 0.75i
 ..
-.de FOOT
+.de FOOTER
 '   sp (0.5i - 1v)
 .   ev foot
 .       ce 1
 .       nop The source code for this document is available at: \c
-.       HREF https://github.com/cianbagshaw/cv
+.       HREF github.com/cianbagshaw/cv
 .   ev
 '   bp
 ..
-.wh 0   HEAD
-.wh -1i FOOT
+.wh 0   HEADER
+.wh -1i FOOTER
