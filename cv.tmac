@@ -1,6 +1,7 @@
 .\" vim: ft=groff
 .nr FIG_PAD 1.2m \" figure padding
 .nr VSPC    120  \" vertical space as % of text size
+.ss 12 0
 .
 .aln VERT_POS nl
 .
@@ -11,20 +12,8 @@
 .   ps \\$1
 .   vs ((\\n[.s] * \\n[VSPC]) / 100)
 ..
-.SIZE 12
+.SIZE 11
 .
-.de LEFT_RULE
-.   br
-.   nr RULE_TOP \\n[VERT_POS]
-.   in +1n
-..
-.de LEFT_RULE_END
-.   in -1n
-.   nr RULE_HEIGHT (\\n[VERT_POS] - \\n[RULE_TOP])
-.   sp -1
-.   nop \L'-\\n[RULE_HEIGHT]u'
-.   br
-..
 .de HEAD
 .   ad c
 ..
@@ -71,21 +60,23 @@
 .   sp .5
 ..
 .de TIMELINE_DATE
-.   sp .5
-.   in +\\n[FIG_PAD]u
-.   ll -\\n[FIG_PAD]u
-.   nop \fI\\$1 \- \\$2\fP
-.   in +1i
-.   sp -1
-.   LEFT_RULE
+.   ds DATES \\$1 - \\$2
 .   shift 2
-.   nop \fB\\$^\fP
-.   br
+.   ps 15
+.   sp .5
+.   nop \\$^
+.   sp -1
+.   ad r
+.   nop \fI\\*[DATES]\fP
+.   sp .2
+.   ad n
+.   ps
 ..
-.de TIMELINE_DATE_END
-.   LEFT_RULE_END
-.   in -(1i + \\n[FIG_PAD]u)
-.   ll +\\n[FIG_PAD]u
+.de P
+.   in +1m
+.   nop \(bu \\$^
+.   in -1m
+.   sp .2
 ..
 .de HREF
 .    pdfhref W -D https://\\$^ -- \\$^
