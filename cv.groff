@@ -9,51 +9,54 @@
 .HREF linkedin.com/in/cian-bagshaw/
 .HEAD_END
 .
-A competent, driven computer enthusiast, with a wide range of skills and
-experience from years of experimentation, with a particular interest in
-\fIUnix\fP-based systems, minimal, and \fIFOSS\fP software.
+Undergraduate Computer Science student in penultimate year of study.
+Strong lifelong interest and involvement with computers.
+Linux user for seven years.
+Interested in systems programming.
+Enthusiastic about understanding and optimising systems.
 .
 .SECTION Competencies
-.LIST 4 8 
-.LI Quick Learner
-.LI Flexible
-.LI Fast Typist
-.LI Multimedia
-.LI Hardware 
-.LI Repair
-.LI Networking
-.LI Windows
-.LI Linux
-.LI Unix Shell
-.LI C/C++
+.LIST 3 7 
+.LI Java
+.LI C
 .LI Python
-.LI NodeJS
-.LI HTML/CSS/JS 
-.LI Groff/Troff
-.LI VI(M)
+.LI HTML/CSS
+.LI JS/NodeJS
+.LI Unix Shell
+.LI Linux
+.LI Fast Typist
+.LI Vim
+.LI Groff
+.LI Git
+.LI Windows
+.LI Hardware
+.LI Networks
 .LIST_END
 .
 .SECTION Educational Institutions 
+.TIMELINE_DATE 2023 * Maynooth University
+.P Third year undergraduate Computer Science student
+.P On track for honours degree (average result: 68%)
+.P Used: Java, Prolog, HTML/CSS/JS, NodeJs, SQL, ExpressJS, ReactJS
 .TIMELINE_DATE 2021 2022 Dunboyne College of Further Education
-Completed modules in programming, networking, web, mobile, hardware, security,
-OSs, and maths.  Was involved in college events and student union.
-.TIMELINE_DATE_END
-.TIMELINE_DATE 2016 2020 Dunshaughlin Community College
-Completed the \fIJunior Cycle\fP and fifth year. Founded a school computer
-club, was a member of the chess club, and received multiple attendance awards.
-.TIMELINE_DATE_END
+.P Computer Systems and Networks: Distinction
+.P Used: NodeJS, HTML, CSS, JS, ExprssJS
+.P Student Council: chaired meetings, compiled agendas, took minutes
+.TIMELINE_DATE 2016 2021 Dunshaughlin Community College
+.P Founded computer club: made handouts and taught Python and HTML
+.P Attendance awards
+.P Chess club member
 .
 .SECTION Work Experience
-.TIMELINE_DATE 2022 2022 Navan PC
-Part time work repairing/refurbishing devices, web development, server and
-network management.
-.TIMELINE_DATE_END
 .TIMELINE_DATE 2021 2022 Navan PC
-Completed work experience for \fIDCFE\fP.
-.TIMELINE_DATE_END
+.P Setup Arch Linux NextCloud server with RAID filesystem
+.P Built interactive business card website
+.P Repaired/upgraded laptops, PCs, phones
+.P Built custom PCs
 .
 .SECTION External Activities
-I maintain a custom-built PC, running a minimal \fIArch Linux i3wm\fP system,
-as well as a \fIDebain Linux\fP VPS running web, email, \fIMatrix\fP, and
-\fIGit\fP servers. I often read technical computer books. Outside of computers,
-I do cooking, walking, weight lifting, and other reading.
+.P Built own PC and setup Arch Linux operating system
+.P Maintains git repository of configuration \(oqdot\(cq files
+.P Setup mail, HTTP (Nginx), Matrix server on Debain Linux VPS
+.P Wrote password management Shell Script for GPG
+.P Frequently reads technical books
